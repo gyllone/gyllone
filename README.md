@@ -4,21 +4,16 @@ I build high-performance systems at the intersection of **blockchain infrastruct
 
 I was a Senior Blockchain Engineer at [SOON Network](https://github.com/soonlabs), contributing to SVM Layer 2 infrastructure and ZK fraud proof. Before that, I led research and AI engineering at HashKey Exchange.
 
-## What I build
-
-- **Blockchain infrastructure** — SVM/EVM systems, OP Stack-based L2s, RPC and genesis components, P2P, derivation pipelines, and on-chain settlement.
-- **Zero-knowledge systems** — Groth16, Halo2, Plonkish/Plookup, Marlin, RISC Zero zkVM, proof aggregation, and application-specific proving protocols.
-- **DeFi protocols** — lending, DEX, perpetuals, liquidation and limit-order bots across Ethereum, Solana, Sui, and TON.
-- **Quantitative trading** — low-latency market-data and execution infrastructure, DEX–CEX arbitrage, options analytics, and automated hedging.
-
 ## Selected work
 
-- **SOON Network** — Build Decoupled SVM L2 infrastructure; integrated RISC-0 zkVM-based ZK fraud proofs and contributed to trading, copy-trading, payment, and prediction-market backends.
-- **Proof of Solvency** — designed and implemented a customized Plonkish IOP protocol, client proving flow, and on-chain verification for scalable CEX proof of solvency. [Paper](https://ethresear.ch/t/full-implementation-of-proof-of-solvency-for-cex-based-on-customized-iop/14596) · [Code](https://github.com/gyllone/posol)
-- **ZKT Protocol** — designed ZK-SNARK architectures for private, compliance-aware multi-chain transactions, including UTXO and innocence proofs. [Paper](https://ethresear.ch/t/advancing-blockchain-transaction-privacy-and-compliance-insights-into-innovative-engineering-practices/18487)
-- **ABEx Finance** — developed smart contracts, SDKs, liquidation bots, and limit-order execution for an AMM-based perpetual protocol on Sui. [Repository](https://github.com/abex-finance)
-- **Soda Maze** — built Groth16 circuits, prover/verifier tooling, a WASM SDK, and Solana-program verification for selectively disclosable private transfers. [Repository](https://github.com/soda-protocol/soda-maze)
-- **Quant systems** — built Solana DEX–CEX arbitrage infrastructure and a Deribit options portfolio and delta-hedging system with pricing, implied-volatility, and Greeks models.
+- **[SOON Network](https://github.com/soonlabs)** — As core developer, built Decoupled SVM L2 infrastructure; integrated RISC-0 zkVM-based ZK fraud proofs and contributed to trading, copy-trading, payment, and prediction-market backends.
+- **[Proof of Solvency](https://github.com/gyllone/posol)** — Designed and implemented a customized Plonkish IOP protocol, client proving flow, and on-chain verification for scalable CEX proof of solvency.
+- **[ABEx Finance](https://github.com/abex-finance)** — As Co-Founder, designed the protocol and developed smart contracts, SDKs, liquidation bots, and limit-order execution for an AMM-based perpetual protocol on Sui.
+- **[Soda Protocol](https://github.com/soda-protocol)** — As Co-Founder, designed and built DeFi and privacy protocols on Solana:
+  - **[Soda Lending](https://github.com/soda-protocol/soda-lending)** — An on-chain lending platform on Solana, including lending and leveraged-trading smart contracts and SDKs.
+  - **[Soda Maze](https://github.com/soda-protocol/soda-maze)** — A ZK-SNARK-based private transfer system with Groth16 circuits, prover/verifier tooling, a WASM SDK, and on-chain proof verification.
+- **[Quant Systems](https://github.com/quantaverse-org)** — As tech lead of Quantaverse, built Solana DEX–CEX arbitrage infrastructure, a Deribit options portfolio and delta-hedging system, and other quantitative products.
+- **[ZKT Protocol](https://github.com/ZKTLabs)** — As core developer, designed ZK-SNARK architectures for private, compliance-aware multi-chain transactions, including UTXO and innocence proofs.
 
 ## Tech stack
 
