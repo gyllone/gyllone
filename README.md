@@ -24,10 +24,11 @@ I was a Senior Blockchain Engineer at [SOON Network](https://github.com/soonlabs
 | ZK & cryptography | Groth16, Halo2, Plonkish, Marlin, GIPA, RISC-0 zkVM |
 | Quant & systems | High-performance & High-robust Infrastructure, Options Model & Hedging, Predictive Model |
 
-## GitHub Metrics
+## GitHub Stats
 
 <p align="center">
-  <img src="./github-metrics.svg" alt="GitHub contribution metrics for gyllone" width="100%">
+  <img src="./profile/stats.svg" alt="GitHub statistics for gyllone" height="180">
+  <img src="./profile/top-langs.svg" alt="Most used languages" height="180">
 </p>
 
 ## Connect

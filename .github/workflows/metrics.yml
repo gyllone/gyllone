@@ -1,4 +1,4 @@
-name: GitHub Metrics
+name: Update Profile Cards
 
 on:
   schedule:
@@ -9,43 +9,43 @@ permissions:
   contents: write
 
 concurrency:
-  group: github-metrics
+  group: profile-cards
   cancel-in-progress: true
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate profile metrics
-        uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
+      - name: Check out profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: gyllone
-          filename: github-metrics.svg
-          output_action: commit
-          output_condition: data-changed
-          committer_message: "chore: update GitHub metrics [skip ci]"
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide_border=true&theme=transparent
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: 2.1.5
+          fail_on_error: true
 
-          template: classic
-          base: header, activity, community, repositories, metadata
-          base_indepth: yes
-          repositories_affiliations: owner, collaborator, organization_member
-          repositories_forks: no
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&theme=transparent
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          core_version: 2.1.5
+          fail_on_error: true
 
-          config_timezone: Asia/Shanghai
-          config_display: large
-
-          plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 8
-          plugin_languages_threshold: 1%
-
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          plugin_notable: yes
-          plugin_notable_indepth: yes
-          plugin_notable_repositories: yes
-          plugin_notable_types: commit, pull_request
-
-          commits_authoring: gyllone, Lone G, gyllone1993@gmail.com
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/stats.svg profile/top-langs.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore: update GitHub profile cards [skip ci]"
+          git push
