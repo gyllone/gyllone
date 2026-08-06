@@ -24,6 +24,12 @@ I was a Senior Blockchain Engineer at [SOON Network](https://github.com/soonlabs
 | ZK & cryptography | Groth16, Halo2, Plonkish, Marlin, GIPA, RISC-0 zkVM |
 | Quant & systems | High-performance & High-robust Infrastructure, Options Model & Hedging, Predictive Model |
 
+## GitHub Metrics
+
+<p align="center">
+  <img src="./github-metrics.svg" alt="GitHub contribution metrics for gyllone" width="100%">
+</p>
+
 ## Connect
 
 [![Email](https://img.shields.io/badge/Email-gyllone1993%40gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:gyllone1993@gmail.com)
