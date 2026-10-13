@@ -6,7 +6,7 @@ I was a Senior Blockchain Engineer at [SOON Network](https://github.com/soonlabs
 
 ## Selected work
 
-- **[SOON Network](https://github.com/soonlabs)** — As core developer, built Decoupled SVM L2 infrastructure; integrated RISC-0 zkVM-based ZK fraud proofs and contributed to trading, copy-trading, payment, and prediction-market backends.
+- **[SOON](https://github.com/soonlabs)** — As core developer, built Decoupled SVM L2 infrastructure; integrated RISC-0 zkVM-based ZK fraud proofs and contributed to trading, copy-trading, payment, and prediction-market backends.
 - **[Proof of Solvency](https://github.com/gyllone/posol)** — Designed and implemented a customized Plonkish IOP protocol, client proving flow, and on-chain verification for scalable CEX proof of solvency.
 - **[ABEx Finance](https://github.com/abex-finance)** — As Co-Founder, designed the protocol and developed smart contracts, SDKs, liquidation bots, and limit-order execution for an AMM-based perpetual protocol on Sui.
 - **[Soda Protocol](https://github.com/soda-protocol)** — As Co-Founder, designed and built DeFi and privacy protocols on Solana:
